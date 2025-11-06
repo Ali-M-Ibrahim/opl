@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class cif extends Model
+{
+    use HasFactory;
+
+
+    public function gethaselected()
+    {
+        return $this->hasOne(haselected::class,'cifs_code','code');
+    }
+
+
+}
