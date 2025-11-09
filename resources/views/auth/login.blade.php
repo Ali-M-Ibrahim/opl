@@ -63,3 +63,18 @@
     </div>
 </main>
 @endsection
+
+
+@section('custom-js')
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form');
+            const button = form.querySelector('button[type="submit"]');
+
+            form.addEventListener('submit', function() {
+                button.disabled = true;
+                button.innerText = 'جاري تسجيل الدخول...';
+            });
+        });
+    </script>
+@endsection

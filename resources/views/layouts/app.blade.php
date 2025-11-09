@@ -33,5 +33,9 @@
     <div id="app">
         @yield('content')
     </div>
+
+
+    @yield('custom-js')
+
 </body>
 </html>
